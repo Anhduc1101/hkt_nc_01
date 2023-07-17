@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .top {
+            background-color: orangered;
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 100px;
+        }
+
+        input {
+            height: 30px;
+            width: 500px;
+            margin-top: 25px;
+        }
+
+        button {
+            width: 35px;
+            height: 35px;
+            margin-top: 25px;
+
+        }
+
+        .top1 {
+            display: flex;
+            gap: 12px;
+            color: blue;
+            padding-top: 15px;
+        }
+
+        .cham {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            gap: 5px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: grey;
+            border: 1px solid none;
+        }
+
+        .mid {
+            background-color: gray;
+            width: auto;
+            height: auto;
+            display: flex;
+            margin: 0px 100px;
+            justify-content: center;
+        }
+
+        .a {
+            display: flex;
+            margin: 40px;
+            gap: 5px;
+        }
+
+        .mid1 {
+            width: 200px;
+        }
+
+        .box1 {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            border-bottom: 1px solid gray;
+            background-color: white;
+        }
+
+        .box2 {
+            display: flex;
+            gap: 5px;
+            background-color: white;
+        }
+
+        ul {
+            line-height: 5px;
+        }
+
+        .box2a {
+            color: orange;
+            padding-top: 16px;
+        }
+
+        .box3 {
+            background-color: white;
+        }
+        .box p{
+            color: orange;
+        }
+        .box3 img {
+            width: 200px;
+            background-color: white
+        }
+
+        .box4 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 0;
+        }
+        .box4a p{
+            color: orange;
+        }
+        .box5 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 0;
+        }
+
+        .foot {
+            margin: 0px 100px;
+            padding-left: 20px;
+            border-top: 2px solid orangered;
+            border-bottom: 2px solid black;
+            background-color: gray;
+        }
+
+        .foota {
+            display: flex;
+            gap: 50px;
+            margin: 20px 0;
+        }
+
+        .foot1 {
+            line-height: 10px;
+        }
+        .foot1a p{
+            margin: 10px;
+        }
+        .foot1b p {
+            color: orange;
+        }
+        @media screen and (max-width:600px){
+                    body {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .top {
+            background-color: orangered;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        input {
+            height: 30px;
+            width: 300px;
+            margin-top: 25px;
+        }
+
+        button {
+            width: 35px;
+            height: 35px;
+            margin-top: 25px;
+        }
+
+        .top1 {
+            display: flex;
+            gap: 12px;
+            color: blue;
+            padding-top: 15px;
+            flex-direction: column;
+        }
+
+        .cham {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            gap: 5px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: grey;
+            border: 1px solid none;
+        }
+
+        .mid {
+            background-color: gray;
+            width: auto;
+            height: auto;
+            display: flex;
+            margin: 0px 100px;
+            justify-content: center;
+        }
+
+        .a {
+            display: flex;
+            margin: 40px;
+            gap: 5px;
+            flex-direction: column;
+        }
+
+        .mid1 {
+            width: 200px;
+        }
+
+        .box1 {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            border-bottom: 1px solid gray;
+            background-color: white;
+        }
+
+        .box2 {
+            display: flex;
+            gap: 5px;
+            background-color: white;
+        }
+
+        ul {
+            line-height: 5px;
+        }
+
+        .box2a {
+            color: orange;
+            padding-top: 16px;
+        }
+
+        .box3 {
+            background-color: white;
+        }
+
+        .box3 img {
+            width: 200px;
+            background-color: white
+        }
+
+        .box4 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 0;
+        }
+        .box4a p{
+            color: orange;
+        }
+        .box5 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 0;
+        }
+
+        .foot {
+            margin: 0px 100px;
+            padding-left: 20px;
+            border-top: 2px solid orangered;
+            border-bottom: 2px solid black;
+            background-color: gray;
+        }
+
+        .foota {
+            display: flex;
+            gap: 50px;
+            margin: 20px 0;
+            flex-direction: column;
+        }
+
+        .foot1 {
+            line-height: 10px;
+        }
+        .foot1a p{
+            margin: 10px;
+        }
+        .foot1b p {
+            color: orange;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <h1>Rikkey_Academy_Shop</h1>
+        <input type="text" placeholder="Tìm kiếm theo tên sản phẩm">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="top1">
+            <p><i class="fa-solid fa-cart-shopping"></i></i>Giỏ hàng</p>
+            <p>Đăng nhập</p>
+            <p>Đăng ký</p>
+        </div>
+    </div>
+    <div class="cham">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+
+    </div>
+
+    <div class="mid">
+        <div class="a">
+            <div class="mid1">
+                <div class="box1">
+                    <i class="fa-sharp fa-solid fa-list-ul"></i>
+                    <p>Danh sách mua hàng</p>
+                </div>
+                <div class="box2">
+                    <div class="box2a">
+                        <i class="fa-sharp fa-solid fa-play"></i>
+                    </div>
+                    <div class="box2b">
+                        <p style="color: orange;">Tất cả sản phẩm</p>
+                        <p>Thiết bị điện tử</p>
+                        <p>Sách</p>
+                        <p>Đồ tiêu dùng</p>
+                        <p>Thời trang</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mid1">
+                <div class="box3">
+                    <img src="/Module1/HTML/HN_JV230630_ĐứcNA/bkt_nc/iphone11promax.jpg">
+                    <figcaption>Iphone 12 promax</figcaption>
+                    <div class="box4a">
+                        <p>35.000.000đ<i class="fa-solid fa-cart-shopping"></i></p>
+
+                    </div>
+                    <div>
+                        <div class="box4">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>48 đã bán</p>
+                        </div>
+                        <div class="box5">
+                            <p>Apple</p>
+                            <p>Hà Nội</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid1">
+                <div class="box3">
+                    <img src="/Module1/HTML/HN_JV230630_ĐứcNA/bkt_nc/DacNhanTam.jpg">
+                    <figcaption>Đắc nhân tâm</figcaption>
+                    <div class="box4a">
+                        <p>56.100đ<i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                    <div>
+                        <div class="box4">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>48 đã bán</p>
+                        </div>
+                        <div class="box5">
+                            <p></p>
+                            <p>Hà Nội</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid1">
+                <div class="box3">
+                    <img src="/Module1/HTML/HN_JV230630_ĐứcNA/bkt_nc/haohao.jpg">
+                    <figcaption>Thùng mỳ Hảo Hảo</figcaption>
+                    <div class="box4a">
+                        <p>108.800đ<i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                    <div>
+                        <div class="box4">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>14905 đã bán</p>
+                        </div>
+                        <div class="box5">
+                            <p></p>
+                            <p>Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid1">
+                <div class="box3">
+                    <img src="/Module1/HTML/HN_JV230630_ĐứcNA/bkt_nc/BiaHeineken.jpg">
+                    <figcaption>Thùng bia Heineken</figcaption>
+                    <div class="box4a">
+                        <p>405.800đ<i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                    <div>
+                        <div class="box4">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>6843 đã bán</p>
+                        </div>
+                        <div class="box5">
+                            <p></p>
+                            <p>Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid1">
+                <div class="box3">
+                    <img src="/Module1/HTML/HN_JV230630_ĐứcNA/bkt_nc/sunlight.jpg">
+                    <figcaption>Nước Rửa chén Sunlight</figcaption>
+                    <div class="box4a">
+                        <p>91.000đ<i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                    <div>
+                        <div class="box4">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>3516 đã bán</p>
+                        </div>
+                        <div class="box5">
+                            <p></p>
+                            <p>Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="foot">
+        <div class="foota">
+            <div class="foot1">
+                <h3>Chăm sóc khách hàng</h3>
+                <p>Trung tâm trợ giúp</p>
+                <p>Hướng dẫn mua hàng</p>
+            </div>
+            <div class="foot1">
+                <h3>Giới thiệu</h3>
+                <p>Điều khoản</p>
+                <p>Chính sách bảo mật</p>
+                <p>Tuyển dụng</p>
+            </div>
+            <div class="foot1">
+                <h3>Danh sách thực phẩm</h3>
+                <p>Thời trang</p>
+                <p>Đồ tiêu dùng</p>
+                <p>Thiết bị điện tử</p>
+                <p>Sách</p>
+            </div>
+            <div class="foot1">
+                <div class="foot1a">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+                    <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+                    <p><i class="fa-brands fa-twitter"></i> Twitter</p>
+                </div>
+            </div>
+            <div class="foot1">
+                <div class="foot1b">
+                    <h3>Đội ngũ phát triển</h3>
+                    <p>Trịnh Quốc Hải</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
